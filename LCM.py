@@ -2,15 +2,15 @@
 
 def compute_lcm(x, y):
    # choose the greater number
-   if x > y:
-       greater = x
+   if x < y:
+       lesser = x
    else:
-      greater = y
+      middleMost = y
    while(True):
-       if((greater % x == 0) and (greater % y == 0)):
+       if((middleMost % x == 0) and (lesser % y == 0)):
            lcm = greater
            break
-       greater += 1
+       middleMost += 1
    return lcm
 
 num1 = 54
